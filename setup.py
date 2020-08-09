@@ -1,8 +1,6 @@
 # coding:utf8
 from setuptools import setup
 
-import easytrader
-
 long_desc = """
 easytrader
 ===============
@@ -78,29 +76,38 @@ return::
 """
 
 setup(
-    name='easytrader',
-    version=easytrader.__version__,
-    description='A utility for China Stock Trade',
+    name="easytrader",
+    version="0.22.0",
+    description="A utility for China Stock Trade",
     long_description=long_desc,
-    author='shidenggui',
-    author_email='longlyshidenggui@gmail.com',
-    license='BSD',
-    url='https://github.com/shidenggui/easytrader',
-    keywords='China stock trade',
+    author="shidenggui",
+    author_email="longlyshidenggui@gmail.com",
+    license="BSD",
+    url="https://github.com/shidenggui/easytrader",
+    keywords="China stock trade",
     install_requires=[
-            'demjson',
-            'requests',
-            'six',
-            'rqopen-client',
+        "requests",
+        "six",
+        "easyutils",
+        "flask",
+        "pywinauto==0.6.6",
+        "pillow",
+        "pandas",
     ],
-    classifiers=['Development Status :: 4 - Beta',
-                 'Programming Language :: Python :: 2.6',
-                 'Programming Language :: Python :: 2.7',
-                 'Programming Language :: Python :: 3.2',
-                 'Programming Language :: Python :: 3.3',
-                 'Programming Language :: Python :: 3.4',
-                 'Programming Language :: Python :: 3.5',
-                 'License :: OSI Approved :: BSD License'],
-    packages=['easytrader', 'easytrader.config'],
-    package_data={'': ['*.jar', '*.json'], 'config': ['config/*.json'], 'thirdlibrary': ['thirdlibrary/*.jar']},
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Programming Language :: Python :: 2.6",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3.2",
+        "Programming Language :: Python :: 3.3",
+        "Programming Language :: Python :: 3.4",
+        "Programming Language :: Python :: 3.5",
+        "License :: OSI Approved :: BSD License",
+    ],
+    packages=["easytrader", "easytrader.config", "easytrader.utils"],
+    package_data={
+        "": ["*.jar", "*.json"],
+        "config": ["config/*.json"],
+        "thirdlibrary": ["thirdlibrary/*.jar"],
+    },
 )

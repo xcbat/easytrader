@@ -1,26 +1,34 @@
 # easytrader
 
+[![Package](https://img.shields.io/pypi/v/easytrader.svg)](https://pypi.python.org/pypi/easytrader)
+[![Travis](https://img.shields.io/travis/shidenggui/easytrader.svg)](https://travis-ci.org/shidenggui/easytrader)
+[![License](https://img.shields.io/github/license/shidenggui/easytrader.svg)](https://github.com/shidenggui/easytrader/blob/master/LICENSE)
+
 * 进行自动的程序化股票交易
-* 实现自动登录
 * 支持跟踪 `joinquant`, `ricequant` 的模拟交易
 * 支持跟踪 雪球组合 调仓
+* 支持通用的同花顺客户端模拟操作
+* 实现自动登录
+* 支持通过 webserver 远程操作客户端
 * 支持命令行调用，方便其他语言适配
-* 支持 Python3 / Python2, Linux / Win, 推荐使用 `Python3`
-* 有兴趣的可以加群 `556050652` 、`549879767`(已满) 、`429011814`(已满) 一起讨论
-* 捐助: [支付宝](http://7xqo8v.com1.z0.glb.clouddn.com/zhifubao2.png)  [微信](http://7xqo8v.com1.z0.glb.clouddn.com/wx.png) 或者 银河开户可以加群找我
-
-## 公众号
-
-请扫码关注“易量化”的微信公众号，不定时更新`easytrader`的最新动态及量化方面的相关文章
-
-![](https://raw.githubusercontent.com/shidenggui/assets/master/easytrader/easy_quant_qrcode.jpg)
+* 基于 Python3.6, Win。注: Linux 仅支持雪球
 
 
-**开发环境** : `Ubuntu 16.04` / `Python 3.5`
+### 微信群以及公众号
+
+欢迎大家扫码关注公众号「食灯鬼」，一起交流。进群可通过菜单加我好友，备注量化。
+
+![公众号二维码](https://gitee.com/shidenggui/assets/raw/master/uPic/mp-qr.png)
+
+若二维码因 Github 网络无法打开，请点击[公众号二维码](https://gitee.com/shidenggui/assets/raw/master/uPic/mp-qr.png)直接打开图片。
+
+### Author
+
+**easytrader** © [shidenggui](https://github.com/shidenggui), Released under the [MIT](./LICENSE) License.<br>
+
+> Blog [@shidenggui](https://shidenggui.com) · Weibo [@食灯鬼](https://www.weibo.com/u/1651274491) · Twitter [@shidenggui](https://twitter.com/shidenggui)
 
 ### 相关
-
-[量化交流论坛](http://www.celuetan.com)
 
 [获取新浪免费实时行情的类库: easyquotation](https://github.com/shidenggui/easyquotation)
 
@@ -29,10 +37,11 @@
 
 ### 支持券商
 
-* 银河
-* 广发
-* 银河客户端(支持自动登陆), 须在 `windows` 平台下载 `银河双子星` 客户端
-* 湘财证券
+* 海通客户端(海通网上交易系统独立委托)
+* 华泰客户端(网上交易系统（专业版Ⅱ）)
+* 国金客户端(全能行证券交易终端PC版)
+* 其他券商通用同花顺客户端(需要手动登陆)
+
 
 ### 模拟交易
 
@@ -42,6 +51,7 @@
 
 [中文文档](http://easytrader.readthedocs.io/zh/master/)
 
-### 其他
 
-[软件实现原理](http://www.jisilu.cn/question/42707)
+### 作者其他作品
+* [大数据网络小说推荐系统 - 推书君](https://www.tuishujun.com)
+* [中文独立个人博客导航 - bloghub.fun](https://bloghub.fun)

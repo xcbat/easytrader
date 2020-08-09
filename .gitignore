@@ -1,9 +1,15 @@
+cmd_cache.pk
+bak
+.mypy_cache
+.pyre
+.pytest_cache
 yjb_account.json
 htt.json
 gft.json
 test.py
 ht_account.json
 .idea
+.vscode
 .ipynb_checkpoints
 Untitled.ipynb
 untitled.txt
@@ -11,6 +17,7 @@ untitled.txt
 __pycache__/
 *.py[cod]
 account.json
+account.session
 # C extensions
 *.so
 
